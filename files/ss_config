@@ -1,0 +1,37 @@
+{
+    "server":"0.0.0.0",
+    "server_port":50003,
+    "local_address": "127.0.0.1",
+    "local_port":1080,
+    "password":"123456",
+    "timeout":300,
+    "method":"aes-256-cfb",
+    "fast_open": false
+}
+说明： 
+server 你 vps 的 IP
+servier_port 服务端的端口
+local_port 本地端口，一般默认1080
+password 服务端设置的密码
+timeout 超时设置
+method 加密方法
+如要你需要分享SS服务给朋友或家人，可以配置多个SS账户，具体可以参考下面的代码:
+{
+    "server":"0.0.0.0",
+    "local_address": "127.0.0.1",
+    "local_port":1080,
+    "timeout": 600,
+    "method": "aes-256-cfb",
+    "port_password":
+    {
+        "10001": "password1",
+        "10002": "password2",
+        "10003": "password3"
+    },
+    "_comment":
+    {
+        "10001": "xiaoming",
+        "10002": "lilei",
+        "10003": "mike"
+    }
+}

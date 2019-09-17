@@ -1,0 +1,7 @@
+[program:shadowsocks]
+command=ssserver -c /etc/shadowsocks.json
+autostart=true
+autorestart=true
+user=root
+log_stderr=true
+logfile=/var/log/shadowsocks.log
